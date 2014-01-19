@@ -1,0 +1,88 @@
+diff -uNr cmmi-0.5.2.orig/dot.cmmirc.en cmmi-0.5.2/dot.cmmirc.en
+--- cmmi-0.5.2.orig/dot.cmmirc.en	2007-01-18 23:34:42.000000000 +0900
++++ cmmi-0.5.2/dot.cmmirc.en	2013-12-29 14:23:47.648037196 +0900
+@@ -36,23 +36,23 @@
+ #
+ # This example supports both Debian system and cygwin system.
+ #
+-if( $ENV{OSTYPE} =~ /linux/ ) {
+-    # Package type
+-    $PACKAGE_TYPE= "D";
+-
+-    # The directory to pool generated packages
+-    $PACKAGE_DIR = "/home/kiyoka/public_html/debian";
+-}
+-else {
+-    # Package type
+-    $PACKAGE_TYPE= "C";
+-    
+-    # The directory to pool generated packages
+-    $PACKAGE_DIR = "/home/kiyoka/park/cygwin";
+-
+-    # installation target directory
+-    $TARGET_PREFIX = "/opt/local";
+-}
++#if( $ENV{OSTYPE} =~ /linux/ ) {
++#    # Package type
++#    $PACKAGE_TYPE= "D";
++#
++#    # The directory to pool generated packages
++#    $PACKAGE_DIR = "/home/kiyoka/public_html/debian";
++#}
++#else {
++#    # Package type
++#    $PACKAGE_TYPE= "C";
++#    
++#    # The directory to pool generated packages
++#    $PACKAGE_DIR = "/home/kiyoka/park/cygwin";
++#
++#    # installation target directory
++#    $TARGET_PREFIX = "/opt/local";
++#}
+ 
+ #
+ # --- Verbose mode ( for debug )
+diff -uNr cmmi-0.5.2.orig/dot.cmmirc.ja cmmi-0.5.2/dot.cmmirc.ja
+--- cmmi-0.5.2.orig/dot.cmmirc.ja	2007-01-18 23:34:42.000000000 +0900
++++ cmmi-0.5.2/dot.cmmirc.ja	2013-12-29 14:24:16.705226436 +0900
+@@ -41,23 +41,23 @@
+ # 次の例では、.cmmirc を Debian system と cygwinシステムで
+ # 共有することができます。
+ #
+-if( $ENV{OSTYPE} =~ /linux/ ) {
+-    # Package type
+-    $PACKAGE_TYPE= "D";
+-
+-    # The directory to pool generated packages
+-    $PACKAGE_DIR = "/home/kiyoka/public_html/debian";
+-}
+-else {
+-    # Package type
+-    $PACKAGE_TYPE= "C";
+-    
+-    # The directory to pool generated packages
+-    $PACKAGE_DIR = "/home/kiyoka/park/cygwin";
+-
+-    # installation target directory
+-    $TARGET_PREFIX = "/opt/local";
+-}
++#if( $ENV{OSTYPE} =~ /linux/ ) {
++#    # Package type
++#    $PACKAGE_TYPE= "D";
++#
++#    # The directory to pool generated packages
++#    $PACKAGE_DIR = "/home/kiyoka/public_html/debian";
++#}
++#else {
++#    # Package type
++#    $PACKAGE_TYPE= "C";
++#    
++#    # The directory to pool generated packages
++#    $PACKAGE_DIR = "/home/kiyoka/park/cygwin";
++#
++#    # installation target directory
++#    $TARGET_PREFIX = "/opt/local";
++#}
+ 
+ #
+ # --- バーボーズモード
